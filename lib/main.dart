@@ -19,23 +19,27 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(
           title: Text('Welcome to Flutter'),
         ),
-        body: Column(
-          children: <Widget>[
-            Center(
-              child: Image.asset(
-                'images/logo.png',
-              ),
+        body:
+          Container(
+            padding: EdgeInsets.all(50),
+            child: Column(
+              children: <Widget>[
+                Center(
+                  child: Image.asset(
+                    'images/logo.png',
+                  ),
+                ),
+                Text(
+                  'Hello World',
+                  textDirection: TextDirection.ltr,
+                  style: TextStyle(
+                    fontSize: 32,
+                    color: Colors.black87,
+                  ),
+                ),
+              ],
             ),
-            Text(
-              'Hello World',
-              textDirection: TextDirection.ltr,
-              style: TextStyle(
-                fontSize: 32,
-                color: Colors.black87,
-              ),
-            ),
-          ],
-        ),
+          ),
       ),
     );
   }
