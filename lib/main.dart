@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Code Sample for material.Card',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.amber,
       ),
       home: Scaffold(
         appBar: AppBar(
@@ -37,6 +37,12 @@ class MyApp extends StatelessWidget {
                     color: Colors.black87,
                   ),
                 ),
+                RaisedButton(
+                  child: Text('Open route'),
+                  onPressed: () {
+                    // Navigate to second route when tapped.
+                  },
+                )
               ],
             ),
           ),
